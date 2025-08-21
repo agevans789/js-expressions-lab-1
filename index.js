@@ -20,3 +20,42 @@ module.exports = {
     // avg_temperature_in_fahrenheit,
     // avg_temperature_in_celsius
 };
+
+day1TempF = 32;
+day2TempC = 25;
+day3TempF = 70;
+day4TempC = 18;
+day5TempF = 80;
+day6TempC = 15;
+day7TempF = 72;
+day8TempC = 28;
+day9TempF = 68;
+day10TempC = 20;
+day11TempF = 75;
+day12TempC = 23;
+day13TempF = 82;
+day14TempC = 30;
+day15TempF = 65;
+day16TempC = 22;
+day17TempF = 77;
+day18TempC = 26;
+day19TempF = 78;
+day20TempC = 24;
+day21TempF = 73;
+day22TempC = 21;
+day23TempF = 79;
+day24TempC = 27;
+day25TempF = 71;
+day26TempC = 19;
+day27TempF = 74;
+day28TempC = 17;
+day29TempF = 77;
+day30TempC = 29;
+
+function celsiustoFahrenheit(temperature) {
+    return (temperature * 9/5) + 32;
+}
+
+function fahrenheitToCelsius(temperature) {
+    return (temperature - 32) * 5/9;
+}
