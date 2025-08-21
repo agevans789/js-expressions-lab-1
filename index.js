@@ -59,3 +59,137 @@ function celsiustoFahrenheit(temperature) {
 function fahrenheitToCelsius(temperature) {
     return (temperature - 32) * 5/9;
 }
+
+celsiustoFahrenheit(day2TempC);
+celsiustoFahrenheit(day4TempC);
+celsiustoFahrenheit(day6TempC);
+celsiustoFahrenheit(day8TempC);
+celsiustoFahrenheit(day10TempC);
+celsiustoFahrenheit(day12TempC);
+celsiustoFahrenheit(day14TempC);
+celsiustoFahrenheit(day16TempC);
+celsiustoFahrenheit(day18TempC);
+celsiustoFahrenheit(day20TempC);
+celsiustoFahrenheit(day22TempC);
+celsiustoFahrenheit(day24TempC);
+celsiustoFahrenheit(day26TempC);
+celsiustoFahrenheit(day28TempC);
+celsiustoFahrenheit(day30TempC);
+
+fahrenheitToCelsius(day1TempF);
+fahrenheitToCelsius(day3TempF);
+fahrenheitToCelsius(day5TempF);
+fahrenheitToCelsius(day7TempF);
+fahrenheitToCelsius(day9TempF);
+fahrenheitToCelsius(day11TempF);
+fahrenheitToCelsius(day13TempF);
+fahrenheitToCelsius(day15TempF);
+fahrenheitToCelsius(day17TempF);
+fahrenheitToCelsius(day19TempF);
+fahrenheitToCelsius(day21TempF);
+fahrenheitToCelsius(day23TempF);
+fahrenheitToCelsius(day25TempF);
+fahrenheitToCelsius(day27TempF);
+fahrenheitToCelsius(day29TempF);
+
+const fahrenheitTemperatures = [
+    day1TempF,
+    celsiustoFahrenheit(day2TempC),
+    day3TempF,
+    celsiustoFahrenheit(day4TempC),
+    day5TempF,
+    celsiustoFahrenheit(day6TempC),
+    day7TempF,
+    celsiustoFahrenheit(day8TempC),
+    day9TempF,
+    celsiustoFahrenheit(day10TempC),
+    day11TempF,
+    celsiustoFahrenheit(day12TempC),
+    day13TempF,
+    celsiustoFahrenheit(day14TempC),
+    day15TempF,
+    celsiustoFahrenheit(day16TempC),
+    day17TempF,
+    celsiustoFahrenheit(day18TempC),
+    day19TempF,
+    celsiustoFahrenheit(day20TempC),
+    day21TempF,
+    celsiustoFahrenheit(day22TempC),
+    day23TempF,
+    celsiustoFahrenheit(day24TempC),
+    day25TempF,
+    celsiustoFahrenheit(day26TempC),
+    day27TempF,
+    celsiustoFahrenheit(day28TempC),
+    day29TempF,
+    celsiustoFahrenheit(day30TempC),
+]
+
+function getTotalTemperatureInFahrenheit() {
+    let total = 0;
+    for(let index = 0; index < fahrenheitTemperatures.length; index++) {
+        total += fahrenheitTemperatures[index];
+    }
+    return total;
+}
+
+const celsiusTemperatures = [
+    fahrenheitToCelsius(day1TempF),
+    day2TempC,
+    fahrenheitToCelsius(day3TempF),
+    day4TempC,
+    fahrenheitToCelsius(day5TempF),
+    day6TempC,
+    fahrenheitToCelsius(day7TempF),
+    day8TempC,
+    fahrenheitToCelsius(day9TempF),
+    day10TempC,
+    fahrenheitToCelsius(day11TempF),
+    day12TempC,
+    fahrenheitToCelsius(day13TempF),
+    day14TempC,
+    fahrenheitToCelsius(day15TempF),
+    day16TempC,
+    fahrenheitToCelsius(day17TempF),
+    day18TempC,
+    fahrenheitToCelsius(day19TempF),
+    day20TempC,
+    fahrenheitToCelsius(day21TempF),
+    day22TempC,
+    fahrenheitToCelsius(day23TempF),
+    day24TempC,
+    fahrenheitToCelsius(day25TempF),
+    day26TempC,
+    fahrenheitToCelsius(day27TempF),
+    day28TempC,
+    fahrenheitToCelsius(day29TempF),
+    day30TempC,
+]
+
+function getTotalTemperatureInCelsius() {
+    let total = 0;
+    for(let index = 0; index < celsiusTemperatures.length; index++) {
+        total += celsiusTemperatures[index];
+    }
+    return total;
+}
+const tot_temperature_in_fahrenheit = getTotalTemperatureInFahrenheit();
+const tot_temperature_in_celsius = getTotalTemperatureInCelsius();
+
+function getAverageTemperatureInFahrenheit() {
+    return tot_temperature_in_fahrenheit / fahrenheitTemperatures.length;
+}
+
+function getAverageTemperatureInCelsius() {
+    return tot_temperature_in_celsius / celsiusTemperatures.length;
+}
+const avg_temperature_in_fahrenheit = getAverageTemperatureInFahrenheit();
+const avg_temperature_in_celsius = getAverageTemperatureInCelsius();
+
+console.log(fahrenheitTemperatures);
+console.log(celsiusTemperatures);
+
+console.log(tot_temperature_in_fahrenheit);
+console.log(tot_temperature_in_celsius);
+console.log(avg_temperature_in_fahrenheit);
+console.log(avg_temperature_in_celsius);
